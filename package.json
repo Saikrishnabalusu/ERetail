@@ -1,0 +1,28 @@
+{
+  "name": "eretail",
+  "version": "1.0.0",
+  "description": "online  retail store",
+  "homepage": "https://github.com/Saikrishnabalusu/ERetail#readme",
+  "bugs": {
+    "url": "https://github.com/Saikrishnabalusu/ERetail/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saikrishnabalusu/ERetail.git"
+  },
+  "license": "ISC",
+  "author": "Balusu Saikrishna",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html --port 4000",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
