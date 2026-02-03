@@ -1,0 +1,59 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="190" cy="190" r="110" fill="none" stroke="#FF9933" stroke-width="3" stroke-dasharray="10,5" filter="url(#neonGlow)" opacity="0.6" />
+
+  <path d="M100 220 L100 150 Q100 140 115 140 L240 140 L290 180 L290 220 Z" fill="#FF7700" filter="url(#neonGlow)" />
+  <rect x="220" y="155" width="45" height="30" fill="#FFE5B4" opacity="0.8" />
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .neon-text {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 32px;
+      font-weight: semi-bold;
+      fill: #00CCFF; /* Neon Blue like the image */
+      filter: url(#neonGlow);
+      animation: pulse 2s infinite;
+    }
+    .wheel {
+      animation: spin 1s linear infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  </style>
+  
+  <text x="200" y="280" class="neon-text" text-anchor="middle">Food on Weels</text>
+
+  <g class="wheel">
+    <circle cx="140" cy="220" r="22" fill="#222" stroke="#FF9933" stroke-width="2" filter="url(#neonGlow)"/>
+    <circle cx="140" cy="220" r="18" fill="none" stroke="#fff" stroke-width="1" opacity="0.5"/>
+    <line x1="140" y1="202" x2="140" y2="238" stroke="#FF9933" stroke-width="2" />
+    <line x1="122" y1="220" x2="158" y2="220" stroke="#FF9933" stroke-width="2" />
+  </g>
+
+  <g class="wheel">
+    <circle cx="250" cy="220" r="22" fill="#222" stroke="#FF9933" stroke-width="2" filter="url(#neonGlow)"/>
+    <circle cx="250" cy="220" r="18" fill="none" stroke="#fff" stroke-width="1" opacity="0.5"/>
+    <line x1="250" y1="202" x2="250" y2="238" stroke="#FF9933" stroke-width="2" />
+    <line x1="232" y1="220" x2="268" y2="220" stroke="#FF9933" stroke-width="2" />
+  </g>
+
+  <circle cx="200" cy="200" r="45" fill="white" stroke="#77B300" stroke-width="5" filter="url(#neonGlow)"/>
+  <path d="M190 185 L190 215 M200 180 L200 220 M210 185 L210 215" stroke="#FF9933" stroke-width="4" stroke-linecap="round"/>
+</svg>
