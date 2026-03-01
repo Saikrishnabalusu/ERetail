@@ -34,7 +34,8 @@ const Header = () => {
         <input
           type="text"
           placeholder="🔍  search for the dishes...."
-          className=" w-96 h-auto p-2 rounded-xl border-amber-600 border-2 outline-none"
+          className=" w-96 h-auto p-2 px-4 rounded-xl border-amber-600 border-2 outline-none"
+          onChange={(e) => console.log(e.target.value, "searched")}
         />
       </div>
       <div className="mr-4 flex items-center gap-10">
