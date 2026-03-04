@@ -11,7 +11,7 @@ const useRestaurants = () => {
       try {
         const response = await axios.get(RESTAURANT_API);
         setRestaurants(
-          response?.data.data.cards[1].card.card.gridElements.infoWithStyle
+          response?.data.cards[1].card.card.gridElements.infoWithStyle
             .restaurants,
         );
       } catch {

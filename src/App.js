@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Components/Header";
 import Restaurants from "./pages/Restaurants";
 import { Route, Routes } from "react-router";
-import RestaurantInfo from "./pages/RestaurantInfo";
+import RestaurantMenu from "./pages/RestaurantMenu";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route
           path="/Restaurant/Restaurant-info/:id"
-          element={<RestaurantInfo />}
+          element={<RestaurantMenu />}
         />
         <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
